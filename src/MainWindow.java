@@ -28,6 +28,8 @@ public class MainWindow extends JFrame
         setSize(600, 300);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         resultField.setFocusable(false);
+        comboBox1.setSelectedIndex(-1);
+
 
 
         //show description
@@ -49,17 +51,18 @@ public class MainWindow extends JFrame
         button1.addActionListener(new ActionListener()
         {
             @Override
-            public void actionPerformed(ActionEvent e)
-            {
-                for (GeneralTask task : Main.generalTaskList)
-                {
-                    if (dropDown.equalsIgnoreCase(task.getName()))
-                    {
-                        localTask = task;
-                        localTask.setInput(inputField.getText());
-                        localTask.countResult();
-                        resultField.setText(localTask.getResult());
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    for (GeneralTask task : Main.generalTaskList) {
+                        if (dropDown.equalsIgnoreCase(task.getName())) {
+                            localTask = task;
+                            localTask.setInput(inputField.getText());
+                            localTask.countResult();
+                            resultField.setText(localTask.getResult());
+                        }
                     }
+                }catch (Exception exception){
+                    resultField.setText("Something goes wrong" + " " + exception.getMessage());
                 }
             }
         });
