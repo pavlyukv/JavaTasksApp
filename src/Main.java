@@ -28,6 +28,9 @@ public class Main
         addToList(new Task86a(), "86a");
         addToList(new Task86b(), "86b");
         addToList(new Task225(), "225");
+        addToList(new Task323(), "323");
+        addToList(new Task559(), "559");
+        addToList(new Task87(), "87");
 
         MainWindow mainWindow = new MainWindow();
     }
