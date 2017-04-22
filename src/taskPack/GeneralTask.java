@@ -28,7 +28,7 @@ public abstract class GeneralTask
     public void setDescription(String description)
     {
         if (description != null)
-        this.description = description.trim();
+            this.description = description.trim();
     }
 
     public String getInput()
