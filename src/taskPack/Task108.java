@@ -12,12 +12,16 @@ public class Task108 extends GeneralTask {
         long number = Long.parseLong(this.getInput());
         long twoInDegree = 1;
 
-        while(true) {
-            if(number >= twoInDegree)
-                twoInDegree *= 2;
-            else
-                break;
+        if(number > Long.MAX_VALUE - 1) {
+            setResult("Your number is too big.");
+        }   else {
+            while(true) {
+                if(number >= twoInDegree)
+                    twoInDegree *= 2;
+                else
+                    break;
+            }
+            setResult(Long.toString(twoInDegree));
         }
-        setResult(Long.toString(twoInDegree));
     }
 }
