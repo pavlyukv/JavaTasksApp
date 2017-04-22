@@ -24,7 +24,7 @@ public class Task322 extends GeneralTask{
                     }
                 }
                 if(count > max){
-                    max = count;
+                    max = count;// need
                     number = i;
                 }
             }
