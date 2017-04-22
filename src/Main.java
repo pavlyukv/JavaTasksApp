@@ -27,11 +27,14 @@ public class Main
         addToList(new Task86a());
         addToList(new Task86b());
         addToList(new Task87());
+        addToList(new Task88a());
+        addToList(new Task88b());
         addToList(new Task107());
         addToList(new Task108());
         addToList(new Task225());
         addToList(new Task243a());
         addToList(new Task243b());
+        addToList(new Task322());
         addToList(new Task323());
         addToList(new Task325());
         addToList(new Task329());
