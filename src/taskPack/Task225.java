@@ -26,7 +26,7 @@ public class Task225 extends GeneralTask
         }
         catch (IllegalArgumentException e)
         {
-            setResult("Wrong input! Must be integer in range from 1 to 10000000000000000.");
+            setResult("Wrong input! Must be: integer in range from 1 to 10^15.");
         }
     }
 }
