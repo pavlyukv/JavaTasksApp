@@ -27,16 +27,18 @@ public class Main
         addToList(new Task86a());
         addToList(new Task86b());
         addToList(new Task87());
+        addToList(new Task107());
         addToList(new Task108());
         addToList(new Task225());
+        addToList(new Task243a());
+        addToList(new Task243b());
         addToList(new Task323());
         addToList(new Task325());
         addToList(new Task329());
         addToList(new Task330());
         addToList(new Task559());
-        addToList(new Task107());
-        addToList(new Task243a());
-        addToList(new Task243b());
+        addToList(new Task562());
+
         MainWindow mainWindow = new MainWindow();
     }
 }
