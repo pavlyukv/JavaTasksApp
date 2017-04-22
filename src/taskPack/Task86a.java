@@ -14,12 +14,15 @@ public class Task86a extends GeneralTask
 
     //overriding general method (main task)
     @Override
-    public void countResult()
-    {
-        //my task
-        int res = String.valueOf(this.getInput()).length();
+    public void countResult() {
 
-        //setting result
-        this.setResult(String.valueOf(res));
+        //my task
+        if (getInput().matches("^[0-9]+")) {
+            int res = String.valueOf(this.getInput()).length();
+            //setting result
+            this.setResult(String.valueOf(res));
+        }else{
+            setResult("Wrong Input");
+        }
     }
 }
