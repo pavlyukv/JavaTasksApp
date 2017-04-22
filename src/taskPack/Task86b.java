@@ -5,6 +5,12 @@ package taskPack;
  */
 public class Task86b extends GeneralTask
 {
+
+    {
+        name = "86b";
+        description = "Сума чисел n";
+    }
+
     @Override
     public void countResult()
     {

@@ -7,6 +7,12 @@ package taskPack;
 //my task example
 public class Task86a extends GeneralTask
 {
+
+    {
+        name = "86a";
+        description = "Скільки цифр в числі n";
+    }
+
     //overriding general method (main task)
     @Override
     public void countResult()
