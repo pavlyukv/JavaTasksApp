@@ -13,12 +13,19 @@ public class Task86b extends GeneralTask
     @Override
     public void countResult()
     {
-        String str = this.getInput();
-        int res = 0;
-        for (char c : str.toCharArray())
-        {
-            res += Character.getNumericValue(c);
+        if (getInput().matches("^[0-9]+")) {
+            String str = this.getInput();
+            int res = 0;
+            for (char c : str.toCharArray())
+            {
+                res += Character.getNumericValue(c);
+            }
+            this.setResult(String.valueOf(res));
+        }else{
+            setResult("Wrong Input");
         }
-        this.setResult(String.valueOf(res));
+
+
+
     }
 }
