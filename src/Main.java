@@ -34,8 +34,9 @@ public class Main
         addToList(new Task329());
         addToList(new Task330());
         addToList(new Task559());
-        addToList(new Task562());
-
+        addToList(new Task107());
+        addToList(new Task243a());
+        addToList(new Task243b());
         MainWindow mainWindow = new MainWindow();
     }
 }
