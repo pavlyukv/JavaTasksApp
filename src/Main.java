@@ -27,6 +27,7 @@ public class Main
         addToList(new Task86a());
         addToList(new Task86b());
         addToList(new Task87());
+        addToList(new Task108());
         addToList(new Task225());
         addToList(new Task323());
         addToList(new Task330());
