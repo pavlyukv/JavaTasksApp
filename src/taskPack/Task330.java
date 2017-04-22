@@ -18,17 +18,21 @@ public class Task330 extends GeneralTask{
     public void countResult() {
 
         String result = "";
-        long number = Long.parseLong(this.getInput());
+        try {
+            long number = Long.parseLong(this.getInput());
 
-            for(int i = 2; i<=number; i++){
+            for (int i = 2; i <= number; i++) {
                 int res = 0;
-                for(int k = 1; k<i; k++){
-                    if(i%k==0) res+=k;
+                for (int k = 1; k < i; k++) {
+                    if (i % k == 0) res += k;
                 }
-                if(res==i) result+=(res+" ");
+                if (res == i) result += (res + " ");
             }
             setResult(result);
+        }catch (Exception e){
+            setResult("Wrong Input!");
         }
+    }
 
     }
 
