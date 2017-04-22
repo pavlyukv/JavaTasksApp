@@ -28,6 +28,7 @@ public class MainWindow extends JFrame
         setSize(600, 300);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         resultField.setFocusable(false);
+        //for empty line in combobox
         comboBox1.setSelectedIndex(-1);
 
 
