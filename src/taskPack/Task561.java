@@ -1,6 +1,7 @@
 package taskPack;
 
 public class Task561 extends GeneralTask {
+
     {
         name = "561";
         description = "Дано натуральне число n. Серед чисел 1...n " +
