@@ -3,7 +3,7 @@ package taskPack;
 public abstract class GeneralTask
 {
     protected String name = "";
-    protected String description = "";
+    protected String description = ""; //comment
     private String input = "";
     private String result = "";
 
