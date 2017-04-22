@@ -2,14 +2,14 @@ package taskPack;
 
 public abstract class GeneralTask
 {
-    protected static String name = "";
-    protected static String description = "";
+    protected String name = "";
+    protected String description = "";
     private String input;
     private String result;
 
     public abstract void countResult();
 
-    public static String getName()
+    public String getName()
     {
         return name;
     }
@@ -19,7 +19,7 @@ public abstract class GeneralTask
         name = name;
     }
 
-    public static String getDescription()
+    public String getDescription()
     {
         return description;
     }
