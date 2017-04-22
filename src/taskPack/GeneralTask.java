@@ -2,26 +2,33 @@ package taskPack;
 
 public abstract class GeneralTask
 {
-    protected static String name = "";
-    protected static String description = "";
-    private String input;
-    private String result;
+    protected String name = "";
+    protected String description = "";
+    private String input = "";
+    private String result = "";
 
     public abstract void countResult();
 
-    public static String getName()
+    public String getName()
     {
         return name;
     }
 
-    public static void setName(String name)
+    public void setName(String name)
     {
-        name = name;
+        if (name != null)
+            this.name = name.trim();
     }
 
-    public static String getDescription()
+    public String getDescription()
     {
         return description;
+    }
+
+    public void setDescription(String description)
+    {
+        if (description != null)
+        this.description = description.trim();
     }
 
     public String getInput()
@@ -31,7 +38,8 @@ public abstract class GeneralTask
 
     public void setInput(String input)
     {
-        this.input = input;
+        if (input != null)
+            this.input = input.trim();
     }
 
     public String getResult()
@@ -41,6 +49,7 @@ public abstract class GeneralTask
 
     public void setResult(String result)
     {
-        this.result = result;
+        if (result != null)
+            this.result = result.trim();
     }
 }

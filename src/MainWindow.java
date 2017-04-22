@@ -3,6 +3,7 @@ import taskPack.GeneralTask;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusAdapter;
 
 /**
  * Created by Kolja on 21.04.2017.
@@ -11,11 +12,12 @@ public class MainWindow extends JFrame
 {
     private JPanel panel1;
     private JComboBox comboBox1;
-    private JTextField textField1;
+    private JTextField inputField;
     private JButton button1;
-    private JTextField textField2;
+    private JTextField resultField;
     private JTextPane textPane1;
     private GeneralTask localTask;
+    private static String dropDown;
 
     //Main window
     public MainWindow()
@@ -25,6 +27,8 @@ public class MainWindow extends JFrame
         setVisible(true);
         setSize(600, 300);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        resultField.setFocusable(false);
+
 
         //show description
         comboBox1.addActionListener(new ActionListener()
@@ -32,10 +36,10 @@ public class MainWindow extends JFrame
             @Override
             public void actionPerformed(ActionEvent e)
             {
+                dropDown = (String) comboBox1.getSelectedItem();
                 for (GeneralTask task : Main.generalTaskList)
                 {
-                    String str = (String) comboBox1.getSelectedItem();
-                    if (str.equalsIgnoreCase(task.getName()))
+                    if (dropDown.equalsIgnoreCase(task.getName()))
                         textPane1.setText(task.getDescription());
                 }
             }
@@ -49,17 +53,17 @@ public class MainWindow extends JFrame
             {
                 for (GeneralTask task : Main.generalTaskList)
                 {
-                    String str = (String) comboBox1.getSelectedItem();
-                    if (str.equalsIgnoreCase(task.getName()))
+                    if (dropDown.equalsIgnoreCase(task.getName()))
                     {
                         localTask = task;
-                        localTask.setInput(textField1.getText());
+                        localTask.setInput(inputField.getText());
                         localTask.countResult();
-                        textField2.setText(localTask.getResult());
+                        resultField.setText(localTask.getResult());
                     }
                 }
             }
         });
+
     }
 
     private void createUIComponents()

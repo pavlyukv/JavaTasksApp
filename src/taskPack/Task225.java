@@ -24,9 +24,9 @@ public class Task225 extends GeneralTask
                     sb.append(q).append(" ");
             setResult(sb.toString());
         }
-        catch (Exception e)
+        catch (IllegalArgumentException e)
         {
-            setResult("Wrong input! Must be in range from 1 to 10000000000000000.");
+            setResult("Wrong input! Must be integer in range from 1 to 10000000000000000.");
         }
     }
 }

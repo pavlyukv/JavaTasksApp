@@ -15,19 +15,19 @@ public class Main
     public static List<String> allNames = new ArrayList<>();
 
     //method for adding new task, use it only !!
-    public static void addToList(GeneralTask task, String name)
+    public static void addToList(GeneralTask task)
     {
-        task.setName(name);
-        allNames.add(name);
+        allNames.add(task.getName());
         generalTaskList.add(task);
     }
 
     public static void main(String[] args)
     {
         //adding new task in program
-        addToList(new Task86a(), "86a");
-        addToList(new Task86b(), "86b");
-        addToList(new Task225(), "225");
+        addToList(new Task86a());
+        addToList(new Task86b());
+        addToList(new Task225());
+        addToList(new Task330());
 
         MainWindow mainWindow = new MainWindow();
     }
