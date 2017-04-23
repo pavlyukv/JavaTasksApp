@@ -1,7 +1,6 @@
 package taskPack;
 
 public class Task108 extends GeneralTask {
-
     {
         name = "108";
         description = "Дано натуральне число n. Отримати найменше число виду 2^r, більше за n";
