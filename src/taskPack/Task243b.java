@@ -18,7 +18,7 @@ public class Task243b extends GeneralTask {
         {
             String str = this.getInput();
 
-            int m = Integer.parseInt(str);
+            long m = Long.parseLong(str);
             boolean b = false;
 
             for (int x = 1; x * x < m; x++)
