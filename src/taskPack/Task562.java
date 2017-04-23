@@ -15,6 +15,18 @@ public class Task562 extends GeneralTask
     @Override
     public void countResult()
     {
-        setResult("153, 370, 371, 407, 1634, 8208, 9474"); // just hardcode, easy way :)
+        StringBuilder sb = new StringBuilder();
+        for (int i = 10, num = i, res = 0; i < 10000; i++, num = i, res = 0)
+        {
+            while (num > 0)
+            {
+                res += Math.pow(num % 10, i < 100 ? 2 : i < 1000 ? 3 : 4);
+                num /= 10;
+            }
+            if (i == res)
+                sb.append(i).append(" ");
+        }
+        setResult(sb.toString().trim().replaceAll(" ", ", "));
+//        setResult("153, 370, 371, 407, 1634, 8208, 9474"); // just hardcode, easy way :)
     }
 }
