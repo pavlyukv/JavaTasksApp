@@ -14,8 +14,8 @@ public class MainWindow extends JFrame
     private JComboBox comboBox1;
     private JTextField inputField;
     private JButton button1;
-    private JTextField resultField;
     private JTextPane textPane1;
+    private JTextArea resultField;
     private GeneralTask localTask;
     private static String dropDown;
 
@@ -25,12 +25,10 @@ public class MainWindow extends JFrame
         setContentPane(panel1);
         setResizable(false);
         setVisible(true);
-        setSize(700, 350);
+        setSize(600, 300);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         resultField.setFocusable(false);
-        //for empty line in combobox
         comboBox1.setSelectedIndex(-1);
-
 
 
         //show description
