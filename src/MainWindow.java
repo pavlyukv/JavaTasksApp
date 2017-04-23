@@ -25,7 +25,7 @@ public class MainWindow extends JFrame
         setContentPane(panel1);
         setResizable(false);
         setVisible(true);
-        setSize(600, 300);
+        setSize(600, 600);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         resultField.setFocusable(false);
         comboBox1.setSelectedIndex(-1);
