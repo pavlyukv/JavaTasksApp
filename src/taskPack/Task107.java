@@ -14,8 +14,8 @@ public class Task107 extends GeneralTask{ {
         try
         {
         String str = this.getInput();
-        int m = Integer.parseInt(str);
-        if(m<1 || m>Integer.MAX_VALUE)
+        long m = Long.parseLong(str);
+        if(m<1 || m>Long.MAX_VALUE)
             throw new IllegalArgumentException();
         int counter = 0;
         for (int i = 0; i < m; i++) {

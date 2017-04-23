@@ -20,7 +20,7 @@ public class Task243a extends GeneralTask{
         {
             String str = this.getInput();
 
-            int m = Integer.parseInt(str);
+            long m = Long.parseLong(str);
             boolean b = false;
             int counter = 0;
             for (int x = 1; x * x < m; x++)
