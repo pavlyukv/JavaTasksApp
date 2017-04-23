@@ -14,8 +14,9 @@ public class MainWindow extends JFrame
     private JComboBox comboBox1;
     private JTextField inputField;
     private JButton button1;
-    private JTextField resultField;
+//    private JTextField resultField;
     private JTextPane textPane1;
+    private JTextArea resultField;
     private GeneralTask localTask;
     private static String dropDown;
 
@@ -30,6 +31,8 @@ public class MainWindow extends JFrame
         resultField.setFocusable(false);
         //for empty line in combobox
         comboBox1.setSelectedIndex(-1);
+        resultField.setLineWrap(true);
+
 
 
 
@@ -60,6 +63,7 @@ public class MainWindow extends JFrame
                             localTask.setInput(inputField.getText());
                             localTask.countResult();
                             resultField.setText(localTask.getResult());
+
                         }
                     }
                 }catch (Exception exception){
