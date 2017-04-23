@@ -34,11 +34,11 @@ public class Task329 extends GeneralTask
                 if (m == (res * res))
                     sb.append(i).append(" ");
             }
-            setResult(sb.toString());
+            setResult(sb.toString().trim().replaceAll(" ", ", "));
         }
         catch (IllegalArgumentException e)
         {
-            setResult("Wrong input! Must be: n, m (bigger then 1)");
+            setResult("Wrong input! Must be integers: n, m (bigger then 1)");
         }
     }
 }
