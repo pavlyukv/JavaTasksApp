@@ -65,7 +65,7 @@ public class MainWindow extends JFrame
                 }
             }
         });
-
+        setLocationRelativeTo(null);
     }
 
     private void createUIComponents()
