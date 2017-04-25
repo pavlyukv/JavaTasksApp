@@ -33,6 +33,7 @@ public class Main
         addToList(new Task108());
         addToList(new Task178d());
         addToList(new Task178g());
+        addToList(new Task182());
         addToList(new Task225());
         addToList(new Task243a());
         addToList(new Task243b());
@@ -43,6 +44,7 @@ public class Main
         addToList(new Task330());
         addToList(new Task555());
         addToList(new Task559());
+        addToList(new Task560());
         addToList(new Task561());
         addToList(new Task562());
 
