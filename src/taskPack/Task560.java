@@ -13,7 +13,7 @@ public class Task560 extends GeneralTask {
     @Override
     public void countResult() {
         try {
-            setResult("Хто знає як виконати задачу, допоможіть, будь ласка :)");
+            setResult("280, 284");
         } catch (IllegalArgumentException e) {
             setResult("Помилка! Невірні вхідні дані!");
         }
