@@ -16,8 +16,8 @@ public class Task88a extends GeneralTask{
         try{
 
             int n = Math.abs(Integer.parseInt(getInput()));
-
-            String a=Integer.toString(n);
+            int q = n*n;
+            String a=Integer.toString(q);
             boolean isThere = false;
             for(int i=0; i<a.length(); i++){
                 if(a.charAt(i)=='3'){
