@@ -1,6 +1,5 @@
-package taskPack;
-
 import org.junit.*;
+import taskPack.Task86a;
 
 import static org.junit.Assert.*;
 
