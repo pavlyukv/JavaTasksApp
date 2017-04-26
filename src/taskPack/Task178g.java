@@ -30,7 +30,6 @@ public class Task178g extends GeneralTask {
                 }
             }
             setResult(String.valueOf(count));
-
         } catch (NumberFormatException e) {
             setResult("Please, enter natural number in Integer range.");
         }

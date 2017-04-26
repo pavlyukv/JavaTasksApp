@@ -24,14 +24,15 @@ public class Task88aTest {
     public void testGetResultEquals() throws Exception {
         task88a.setInput("6");
         task88a.countResult();
-        assertEquals("9", task88a.getResult());
+        assertEquals("true", task88a.getResult());
     }
 
     @Test
     public void testGetResultTrue() throws Exception {
         task88a.setInput("123");
         task88a.countResult();
-        assertTrue("3".equals(task88a.getResult()));
+        assertTrue("false".equals(task88a.getResult()));
+
     }
 
     @After

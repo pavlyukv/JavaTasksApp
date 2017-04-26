@@ -10,15 +10,22 @@ public class Task330Test {
     public static Task330 task330;
 
     @BeforeClass
-    public void setUp(){
+    public static void setUp(){
         task330 = new Task330();
     }
 
     @Test
-    public void testInput(){
+    public void testSmallInput(){
         task330.setInput("555");
         task330.countResult();
         assertEquals(task330.getResult(), "6 28 496");
+    }
+
+    @Test
+    public void testBiggerInput(){
+        task330.setInput("12313");
+        task330.countResult();
+        assertEquals(task330.getResult(), "6 28 496 8128");
     }
 
     @Test

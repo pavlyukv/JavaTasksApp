@@ -13,7 +13,7 @@ public class Task178gTest {
     private static Task178g task178g;
 
     @BeforeClass
-    public void setUp(){
+    public static void setUp(){
         task178g = new Task178g();
     }
 
@@ -22,6 +22,20 @@ public class Task178gTest {
         task178g.setInput("1 1 1 1");
         task178g.countResult();
         assertEquals(task178g.getResult(), "0");
+    }
+
+    @Test
+    public void testThree(){
+        task178g.setInput("2 3 6 8 2 1 2");
+        task178g.countResult();
+        assertEquals(task178g.getResult(), "3");
+    }
+
+    @Test
+    public void testOne(){
+        task178g.setInput("2 3 6");
+        task178g.countResult();
+        assertEquals(task178g.getResult(), "1");
     }
 
     @Test
