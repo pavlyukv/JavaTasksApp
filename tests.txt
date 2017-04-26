@@ -5,7 +5,7 @@ Marta - 87, 108, 178d
 Orest - 330
 Mykola - 88b, 562, 329
 Yaroslav -
-Maryan - 325
+Maryan - 325, 86b, 322
 Vlad -
 Volodymyr -
 
@@ -15,3 +15,5 @@ Volodymyr - Vasyl project
 Mykola - Orest project
 Orest - Mykola project
 Marta-Yaroslav project
+Marian-Marta project
+Yaroslav-Marian project
