@@ -17,3 +17,4 @@ Orest - Mykola project
 Marta-Yaroslav project
 Marian-Marta project
 Yaroslav-Marian project
+Vasyl - Volodymyr project
