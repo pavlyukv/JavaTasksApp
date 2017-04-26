@@ -7,7 +7,7 @@ Mykola - 88b, 562, 329
 Yaroslav - 88a,
 Maryan - 325, 86b, 322
 Vlad -
-Volodymyr - 86a
+Volodymyr - 86a, 182
 
 Projects/
 
