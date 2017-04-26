@@ -1,5 +1,4 @@
 import org.junit.*;
-import taskPack.Task225;
 import taskPack.Task88b;
 
 import static org.junit.Assert.assertEquals;
@@ -56,7 +55,7 @@ public class Task88bTest {
     }
 
     @AfterClass
-    public static void tearDwon() throws Exception // run one time after all tests
+    public static void closeTest() throws Exception // run one time after all tests
     {
         task88b = null;
     }
