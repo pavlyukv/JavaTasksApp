@@ -1,0 +1,16 @@
+Tasks/
+
+Vasyl - 225, 561, 107
+Marta - 87, 108, 178d
+Orest - 330
+Mykola - 88b, 562, 329
+Yaroslav -
+Maryan - 325
+Vlad -
+Volodymyr -
+
+Projects/
+
+Volodymyr - Vasyl project
+Mykola - Orest project
+Orest - Mykola project
