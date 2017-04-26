@@ -1,5 +1,3 @@
-package tests;
-
 import org.junit.*;
 import taskPack.Task330;
 

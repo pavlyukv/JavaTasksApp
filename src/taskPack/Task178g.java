@@ -25,7 +25,7 @@ public class Task178g extends GeneralTask {
                 list.add(n);
             }
             for (int i = 1; i < list.size() - 1; i++) {
-                if (list.get(i) < (list.get(i - 1) + list.get(i - 1)) / 2) {
+                if (list.get(i) < (list.get(i - 1) + list.get(i + 1)) / 2) {
                     count++;
                 }
             }
